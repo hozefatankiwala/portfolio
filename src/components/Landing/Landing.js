@@ -9,11 +9,10 @@ import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
 
 import {
-    FaTwitter,
     FaLinkedin,
     FaGithub,
-    FaYoutube,
-    FaBlogger,
+    FaInstagram,
+    FaFacebook,
 } from 'react-icons/fa';
 
 function Landing() {
@@ -101,33 +100,33 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {/* {socialsData.twitter && (
+                        {socialsData.instagram && (
                             <a
-                                href={socialsData.twitter}
+                                href={socialsData.instagram}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaTwitter
+                                <FaInstagram
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
-                                    aria-label='Twitter'
+                                    aria-label='Instagram'
                                 />
                             </a>
                         )}
-                        {socialsData.youtube && (
+                        {socialsData.facebook && (
                             <a
-                                href={socialsData.youtube}
+                                href={socialsData.facebook}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaYoutube
+                                <FaFacebook
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='YouTube'
                                 />
                             </a>
                         )}
-                        {socialsData.blogger && (
+                        {/* {socialsData.blogger && (
                             <a
                                 href={socialsData.blogger}
                                 target='_blank'
@@ -139,7 +138,7 @@ function Landing() {
                                     aria-label='Blogger'
                                 />
                             </a>
-                        )} */}
+                        )}  */}
                     </div>
                 </div>
                 <img

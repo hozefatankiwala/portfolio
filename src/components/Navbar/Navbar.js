@@ -5,7 +5,7 @@ import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
 import { HiDocumentText } from 'react-icons/hi';
 import { BsFillGearFill } from 'react-icons/bs';
 import { MdPhone } from 'react-icons/md';
-import { FaUser, FaFolderOpen } from 'react-icons/fa';
+import { FaUser, FaFolderOpen, FaCode } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
@@ -51,7 +51,7 @@ function Navbar() {
         },
         MuiDrawer: {
             padding: '0em 1.8em',
-            width: '14em',
+            width: '15em',
             fontFamily: ' var(--primaryFont)',
             fontStyle: ' normal',
             fontWeight: ' normal',
@@ -217,24 +217,6 @@ function Navbar() {
 
                         <Fade left>
                             <NavLink
-                                to='/#education'
-                                smooth={true}
-                                spy='true'
-                                duration={2000}
-                            >
-                                <div className={classes.drawerItem}>
-                                    <HiDocumentText
-                                        className={classes.drawerIcon}
-                                    />
-                                    <span className={classes.drawerLinks}>
-                                        Education
-                                    </span>
-                                </div>
-                            </NavLink>
-                        </Fade>
-
-                        <Fade left>
-                            <NavLink
                                 to='/#skills'
                                 smooth={true}
                                 spy='true'
@@ -246,6 +228,42 @@ function Navbar() {
                                     />
                                     <span className={classes.drawerLinks}>
                                         Skills
+                                    </span>
+                                </div>
+                            </NavLink>
+                        </Fade>
+
+                        <Fade left>
+                            <NavLink
+                                to='/#experience'
+                                smooth={true}
+                                spy='true'
+                                duration={2000}
+                            >
+                                <div className={classes.drawerItem}>
+                                    <FaCode
+                                        className={classes.drawerIcon}
+                                    />
+                                    <span className={classes.drawerLinks}>
+                                        Experience
+                                    </span>
+                                </div>
+                            </NavLink>
+                        </Fade>
+
+                        <Fade left>
+                            <NavLink
+                                to='/#education'
+                                smooth={true}
+                                spy='true'
+                                duration={2000}
+                            >
+                                <div className={classes.drawerItem}>
+                                    <HiDocumentText
+                                        className={classes.drawerIcon}
+                                    />
+                                    <span className={classes.drawerLinks}>
+                                        Education
                                     </span>
                                 </div>
                             </NavLink>

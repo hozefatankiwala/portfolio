@@ -3,10 +3,14 @@
     'Javascript',
     'CSS',
     'React',
-    'Django',
-    'MongoDB',
+    'PostgreSQL',
     'MySQL',
-    'Python'
+    'Python',
+    'Git',
+    'Vue',
+    'Angular',
+    'AWS',
+    'MaterialUI'
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
